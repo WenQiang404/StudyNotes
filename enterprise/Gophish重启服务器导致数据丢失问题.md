@@ -18,3 +18,8 @@ Gophish默认使用SQLite进行数据存储，重启服务器发现ID全部消�
 1. 搭建Gophish服务
 2. 发送钓鱼邮件成功:  testgophish@sina.com
 3. 分析源码
+4. 可能出现问题的位置：
+![img.png](img.png)
+<br/>
+IMAP：第87行Removelogs方法
+![img_1.png](img_1.png)
