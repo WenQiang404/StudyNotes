@@ -21,15 +21,15 @@ Gophish默认使用SQLite进行数据存储，重启服务器发现ID全部消�
 > imap/monitr.go<br/>
 > - 为每一个用户创建一个goroutine，每隔十秒钟检测是否有新用户未分配，未分配则调用monitor方法
 > - usermap:[是否拥有goroutine（1是2否）]userID
-> ![img.png](img.png)
+> ![img.png](../../img/img.png)
 > <br/>
 > - ---
 > monitor 方法：
 > 监视器将持续登录到与提供的用户 ID 关联的 IMAP 设置（如果用户帐户具有 IMAP 设置，并且已启用这些设置）<br/>
-> ![img_1.png](img_1.png)
+> ![img_1.png](../../img/img_1.png)
 > 如果用户不存在，直接退出（是否报404？）
 >---
 > rid在result结构体中保存
-> ![img_2.png](img_2.png)
+> ![img_2.png](../../img/img_2.png)
 > r_id在数据库中的位置
-> ![img_3.png](img_3.png)
+> ![img_3.png](../../img/img_3.png)
